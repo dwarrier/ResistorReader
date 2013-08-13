@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowNoTitle = "true"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+        	android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/button1"
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_weight=".30"
+                android:gravity="center"
+                android:text="A"
+                android:background="@drawable/border"
+                android:onClick="onButton"/>
+
+            <TextView
+                android:id="@+id/button2"
+                android:background="@drawable/border"
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_weight=".20"
+                android:gravity="center"
+                android:text="B" 
+                android:onClick="onButton"/>
+
+            <TextView
+                android:id="@+id/button3"
+                android:background="@drawable/border"
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_weight=".20"
+                android:gravity="center"
+                android:text="C" 
+                android:onClick="onButton"/>
+
+            <TextView
+                android:id="@+id/button4"
+                android:background="@drawable/border"
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_weight=".30"
+                android:gravity="center"
+                android:text="D" 
+                android:onClick="onButton"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine" >
+
+            <requestFocus />
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>
